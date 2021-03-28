@@ -1,0 +1,10 @@
+#!/bin/bash
+
+while read line; do
+    segments=($line)
+    plugin="${segments[0]}"
+    ~/.asdf/bin/asdf plugin add $plugin
+    for version in "${segments[@]:1}"; do 
+        ~/.asdf/bin/asdf install $plugin $version
+    done
+done < ./ASDFfile

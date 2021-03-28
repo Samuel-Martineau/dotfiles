@@ -1,0 +1,33 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "explorer.compactFolders": false,
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono'",
+  "window.zoomLevel": 0.75,
+  // #############################################################
+  // ######################## Extensions #########################
+  // #############################################################
+  "prettier.tabWidth": 2,
+  // #############################################################
+  // ######################### Languages #########################
+  // #############################################################
+  // Python
+  "python.analysis.typeCheckingMode": "basic",
+  "python.languageServer": "Pylance",
+  "[python]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  // NGINX
+  "[nginx]": {
+    "editor.defaultFormatter": "raynigon.nginx-formatter"
+  }
+}

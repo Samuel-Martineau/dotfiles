@@ -1,0 +1,33 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+      glob: true
+    shell:
+      stdout: true
+      stderr: true
+
+- clean: ["~"]
+
+- link:
+    ~/.zshrc: .zshrc
+    ~/.zsh_plugins/zsh-autosuggestions: zsh-autosuggestions
+    ~/.zsh_plugins/zsh-completions: zsh-autosuggestions
+    ~/.zsh_plugins/zsh-syntax-highlighting: zsh-syntax-highlighting
+    ~/.asdf: asdf
+    ~/.asdfrc: .asdfrc
+    ~/.tool-versions: .tool-versions
+    ~/.default-npm-packages: .default-npm-packages
+    ~/.default-python-packages: .default-python-packages
+    ~/Library/Application Support/Code/User/: vscode/*
+
+- create:
+    ~/.ssh:
+      mode: 0700
+
+- brewfile:
+    - ./Brewfile
+
+- shell:
+    - ["./install-vscode-extensions", Install VSCode extensions from VSCodefile]
+    - ["./install-asdf-plugins", Install ASDF plugins from ASDFfile]
