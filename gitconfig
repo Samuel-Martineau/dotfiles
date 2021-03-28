@@ -1,0 +1,9 @@
+[user]
+name = Samuel Martineau
+email = samumartineau@gmail.com
+
+[credential]
+helper = osxkeychain
+
+[include]
+path = ~/.gitconfig_local

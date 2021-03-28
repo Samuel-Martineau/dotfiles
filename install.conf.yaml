@@ -10,16 +10,17 @@
 - clean: ["~"]
 
 - link:
-    ~/.zshrc: .zshrc
+    ~/.zshrc: zshrc
     ~/.zsh_plugins/zsh-autosuggestions: zsh-autosuggestions
     ~/.zsh_plugins/zsh-completions: zsh-autosuggestions
     ~/.zsh_plugins/zsh-syntax-highlighting: zsh-syntax-highlighting
     ~/.asdf: asdf
-    ~/.asdfrc: .asdfrc
-    ~/.tool-versions: .tool-versions
-    ~/.default-npm-packages: .default-npm-packages
-    ~/.default-python-packages: .default-python-packages
+    ~/.asdfrc: asdfrc
+    ~/.tool-versions: tool-versions
+    ~/.default-npm-packages: default-npm-packages
+    ~/.default-python-packages: default-python-packages
     ~/Library/Application Support/Code/User/: vscode/*
+    ~/.gitconfig: gitconfig
 
 - create:
     ~/.ssh:

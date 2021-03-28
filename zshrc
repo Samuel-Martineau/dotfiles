@@ -41,41 +41,6 @@ fpath=(${ASDF_DIR}/completions $fpath)
 
 
 #############################################################
-########################### Node ############################
-#############################################################
-# export NVM_COMPLETION=true
-# export NVM_LAZY_LOAD=true
-# export NVM_AUTO_USE=true
-# source ~/.zsh_plugins/zsh-nvm/zsh-nvm.plugin.zsh
-
-
-#############################################################
-########################## Python ###########################
-#############################################################
-# if command -v pyenv 1>/dev/null 2>&1; then
-#         eval "$(pyenv init -)"
-# fi
-
-# eval "$(pyenv virtualenv-init -)"
-
-# function _pip_completion {
-#   local words cword
-#   read -Ac words
-#   read -cn cword
-#   reply=( $( COMP_WORDS="$words[*]" \
-#              COMP_CWORD=$(( cword-1 )) \
-#              PIP_AUTO_COMPLETE=1 $words[1] 2>/dev/null ))
-# }
-# compctl -K _pip_completion pip
-
-# # https://github.com/pyenv/pyenv/issues/1746#issuecomment-736754241 https://stackoverflow.com/a/61879759
-# export LDFLAGS="-L/usr/local/opt/zlib/lib -L$(brew --prefix tcl-tk)/lib"
-# export CPPFLAGS="-I/usr/local/opt/zlib/include -I$(brew --prefix tcl-tk)/include"
-# export PATH="$(brew --prefix tcl-tk)/bin:$PATH"
-# export PKG_CONFIG_PATH="$(brew --prefix tcl-tk)/lib/pkgconfig"
-# export PYTHON_CONFIGURE_OPTS="--with-tcltk-includes='-I$(brew --prefix tcl-tk)/include' --with-tcltk-libs='-L$(brew --prefix tcl-tk)/lib"
-
-#############################################################
 ########################### Alias ###########################
 #############################################################
 alias ls="exa --icons --color always"
@@ -100,3 +65,11 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 autoload -Uz compinit
 compinit
+
+#############################################################
+################## Load Local Configuration #################
+#############################################################
+
+if [ -f ~/.zshrc_local ]; then
+    source ~/.zshrc_local
+fi
