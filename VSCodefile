@@ -13,6 +13,8 @@ ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
 ms-vscode-remote.remote-containers
+ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-ssh-edit
 ms-vsliveshare.vsliveshare
 ms-vsliveshare.vsliveshare-audio
 ms-vsliveshare.vsliveshare-pack
