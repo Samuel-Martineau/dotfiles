@@ -55,6 +55,8 @@ alias benchmark_zsh="hyperfine '/bin/zsh -i -c exit;'"
 #############################################################
 ####################### Other Options #######################
 #############################################################
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
 # https://opensource.com/article/18/9/tips-productivity-zsh
 setopt autocd autopushd
 

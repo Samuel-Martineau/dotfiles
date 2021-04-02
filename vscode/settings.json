@@ -1,4 +1,8 @@
 {
+  // #############################################################
+  // ########################## General ##########################
+  // #############################################################
+  // Workbench
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editorAssociations": [
     {
@@ -6,11 +10,16 @@
       "filenamePattern": "*.ipynb"
     }
   ],
+  "workbench.welcomePage.hiddenCategories": ["Setup", "Beginner"],
+  // Editor
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  // Explorer
   "explorer.compactFolders": false,
+  // Terminal
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono'",
+  // Window
   "window.zoomLevel": 0.75,
   // #############################################################
   // ######################## Extensions #########################

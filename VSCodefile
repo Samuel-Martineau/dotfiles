@@ -1,6 +1,7 @@
 ahmadalli.vscode-nginx-conf
 alexcvzz.vscode-sqlite
 azemoh.one-monokai
+dbaeumer.vscode-eslint
 druideinformatique.antidote
 eamodio.gitlens
 esbenp.prettier-vscode
@@ -21,6 +22,8 @@ ms-vsliveshare.vsliveshare-audio
 ms-vsliveshare.vsliveshare-pack
 PKief.material-icon-theme
 raynigon.nginx-formatter
+redhat.java
+redhat.vscode-yaml
 ritwickdey.LiveServer
 svelte.svelte-vscode
 tamasfe.even-better-toml
