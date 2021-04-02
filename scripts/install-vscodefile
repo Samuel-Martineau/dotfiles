@@ -1,5 +1,8 @@
 #!/bin/bash
 
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "${BASEDIR}"
+
 while read extension_id; do
     /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension $extension_id
 done < ./VSCodefile

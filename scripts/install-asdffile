@@ -1,5 +1,8 @@
 #!/bin/bash
 
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "${BASEDIR}"
+
 while read line; do
     segments=($line)
     plugin="${segments[0]}"

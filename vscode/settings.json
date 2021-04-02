@@ -22,6 +22,7 @@
   // Python
   "python.analysis.typeCheckingMode": "basic",
   "python.languageServer": "Pylance",
+  "python.formatting.provider": "black",
   "[python]": {
     "editor.wordBasedSuggestions": false,
     "editor.defaultFormatter": "ms-python.python"

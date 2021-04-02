@@ -38,6 +38,7 @@ bindkey "^[[B" history-beginning-search-forward-end
 #############################################################
 source $HOME/.asdf/asdf.sh
 fpath=(${ASDF_DIR}/completions $fpath)
+export PYTHON_CONFIGURE_OPTS="--with-tcltk-includes='-I/usr/local/opt/tcl-tk/include' --with-tcltk-libs='-L/usr/local/opt/tcl-tk/lib -ltcl8.6 -ltk8.6'"
 
 
 #############################################################

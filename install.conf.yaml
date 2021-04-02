@@ -30,5 +30,8 @@
     - ./Brewfile
 
 - shell:
-    - ["./install-vscode-extensions", Install VSCode extensions from VSCodefile]
-    - ["./install-asdf-plugins", Install ASDF plugins from ASDFfile]
+    - [
+        "./scripts/install-vscodefile",
+        Install VSCode extensions from VSCodefile,
+      ]
+    - ["./scripts/install-asdffile", Install ASDF plugins from ASDFfile]
