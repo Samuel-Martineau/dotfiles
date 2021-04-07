@@ -14,6 +14,9 @@
   // Editor
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
   // Explorer
   "explorer.compactFolders": false,
   // Terminal
@@ -27,10 +30,6 @@
   // Prettier
   "prettier.tabWidth": 2,
   // Emmet
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "typescript": "typescriptreact"
-  },
   // #############################################################
   // ######################### Languages #########################
   // #############################################################
@@ -53,5 +52,15 @@
       "strings": true
     },
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  }
+  },
+  // XML
+  "[xml]": {
+    "editor.autoClosingBrackets": "never",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": false,
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "gitlens.mode.active": "zen"
 }
