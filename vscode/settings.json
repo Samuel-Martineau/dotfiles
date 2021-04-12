@@ -24,6 +24,13 @@
   "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono'",
   // Window
   "window.zoomLevel": 0.75,
+  // Files
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
   // #############################################################
   // ######################## Extensions #########################
   // #############################################################
@@ -60,7 +67,13 @@
     "files.trimTrailingWhitespace": false,
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
+  // TypeScript
   "typescript.updateImportsOnFileMove.enabled": "always",
+  // JavaScript
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "gitlens.mode.active": "zen"
+  // TOML
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "liveshare.presence": true
 }
