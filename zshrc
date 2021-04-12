@@ -5,6 +5,12 @@ eval "$(starship init zsh)"
 
 
 #############################################################
+########################### Navi ###########################
+#############################################################
+eval "$(navi widget zsh)"
+
+
+#############################################################
 ######################### HomeBrew ##########################
 #############################################################
 eval $(brew shellenv)
@@ -17,6 +23,7 @@ source "$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/ha
 fpath=(~/.zsh_plugins/zsh-completions/src $fpath)
 source ~/.zsh_plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh_plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 
 #############################################################
@@ -40,6 +47,15 @@ source $HOME/.asdf/asdf.sh
 fpath=(${ASDF_DIR}/completions $fpath)
 export PYTHON_CONFIGURE_OPTS="--with-tcltk-includes='-I/usr/local/opt/tcl-tk/include' --with-tcltk-libs='-L/usr/local/opt/tcl-tk/lib -ltcl8.6 -ltk8.6'"
 
+#############################################################
+########################## Android ##########################
+#############################################################
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 #############################################################
 ########################### Alias ###########################
@@ -57,6 +73,9 @@ alias benchmark_zsh="hyperfine '/bin/zsh -i -c exit;'"
 #############################################################
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
+# https://stackoverflow.com/a/11873793/12011539
+setopt interactivecomments
+
 # https://opensource.com/article/18/9/tips-productivity-zsh
 setopt autocd autopushd
 
@@ -66,6 +85,9 @@ zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower
 
 # https://serverfault.com/a/170481
 zstyle ':completion:*:(ssh|scp|ftp|sftp):*' hosts ${${${(@M)${(f)"$(cat ~/.ssh/config)"}:#Host *}#Host }:#*[*?]*}
+
+# https://unix.stackexchange.com/a/499322/419750
+zstyle ':completion:*:*:make:*' tag-order 'targets'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
