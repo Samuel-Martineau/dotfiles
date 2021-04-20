@@ -22,6 +22,7 @@
     ~/.default-python-packages: default-python-packages
     ~/Library/Application Support/Code/User/: vscode/*
     ~/.gitconfig: gitconfig
+    ~/.config/: config/*
 
 - create:
     ~/.ssh:
