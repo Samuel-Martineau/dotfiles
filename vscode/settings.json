@@ -12,6 +12,8 @@
   ],
   "workbench.welcomePage.hiddenCategories": ["Setup", "Beginner"],
   // Editor
+  "editor.fontFamily": "'Fira Code'",
+  "editor.fontLigatures": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
@@ -75,5 +77,6 @@
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
-  "liveshare.presence": true
+  "liveshare.presence": true,
+  "workbench.colorTheme": "Codel"
 }
