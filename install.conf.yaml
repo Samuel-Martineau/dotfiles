@@ -15,6 +15,7 @@
     ~/.zsh_plugins/zsh-completions: zsh-autosuggestions
     ~/.zsh_plugins/zsh-syntax-highlighting: zsh-syntax-highlighting
     ~/.zsh_plugins/zsh-vi-mode: zsh-vi-mode
+    ~/.zsh_plugins/pure: pure
     ~/.asdf: asdf
     ~/.asdfrc: asdfrc
     ~/.tool-versions: tool-versions

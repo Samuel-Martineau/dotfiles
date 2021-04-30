@@ -29,3 +29,6 @@
 [submodule "zsh-vi-mode"]
 	path = zsh-vi-mode
 	url = https://github.com/jeffreytse/zsh-vi-mode.git
+[submodule "pure"]
+	path = pure
+	url = https://github.com/sindresorhus/pure.git
