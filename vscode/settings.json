@@ -6,11 +6,19 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editorAssociations": [
     {
+      "viewType": "imagePreview.previewEditor",
+      "filenamePattern": "*.jpg"
+    },
+    {
+      "viewType": "imagePreview.previewEditor",
+      "filenamePattern": "*.png"
+    },
+    {
       "viewType": "jupyter.notebook.ipynb",
       "filenamePattern": "*.ipynb"
     }
   ],
-  "workbench.welcomePage.hiddenCategories": ["Setup", "Beginner"],
+  "workbench.colorTheme": "Codel",
   // Editor
   "editor.fontFamily": "'Fira Code'",
   "editor.fontLigatures": true,
@@ -38,7 +46,10 @@
   // #############################################################
   // Prettier
   "prettier.tabWidth": 2,
-  // Emmet
+  // LiveShare
+  "liveshare.presence": true,
+  // Redhat
+  "redhat.telemetry.enabled": false,
   // #############################################################
   // ######################### Languages #########################
   // #############################################################
@@ -77,6 +88,11 @@
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
-  "liveshare.presence": true,
-  "workbench.colorTheme": "Codel"
+  // Markdown
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlens.mode.active": "zen"
 }
