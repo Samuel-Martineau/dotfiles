@@ -39,5 +39,4 @@
 - shell:
     - ./scripts/install-vscodefile
     - ./scripts/install-asdffile
-    - ./scripts/install-iconsfile
     - hugo gen autocomplete --type zsh --completionfile=/usr/local/share/zsh/site-functions/_hugo
