@@ -4,29 +4,23 @@
   // #############################################################
   // Workbench
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.editorAssociations": [
-    {
-      "viewType": "imagePreview.previewEditor",
-      "filenamePattern": "*.jpg"
-    },
-    {
-      "viewType": "imagePreview.previewEditor",
-      "filenamePattern": "*.png"
-    },
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.jpeg": "luna.editor",
+    "*.jpg": "imagePreview.previewEditor",
+    "*.png": "imagePreview.previewEditor",
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
   "workbench.colorTheme": "Codel",
   // Editor
   "editor.fontFamily": "'Fira Code'",
+  "editor.fontSize": 12,
   "editor.fontLigatures": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
+  "editor.tabSize": 2,
   // Explorer
   "explorer.compactFolders": false,
   // Terminal
@@ -93,6 +87,5 @@
     "editor.wordWrap": "on",
     "editor.quickSuggestions": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "gitlens.mode.active": "zen"
+  }
 }

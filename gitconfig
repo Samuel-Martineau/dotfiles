@@ -19,10 +19,20 @@
 [interactive]
     diffFilter = delta --color-only
 
-[include]
-    path = ~/.gitconfig_local
-
 [init]
 	defaultBranch = main
+
 [pull]
 	rebase = false
+
+[push]
+	followTags = true
+
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+
+[include]
+    path = ~/.gitconfig_local

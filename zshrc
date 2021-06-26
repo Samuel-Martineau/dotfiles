@@ -72,7 +72,9 @@ alias ll="ls -l"
 alias lla="ls -la"
 alias cat="bat"
 alias benchmark_zsh="hyperfine '/bin/zsh -i -c exit;'"
-
+# https://gist.github.com/jackinloadup/732325#gistcomment-2572096
+alias randomsay="cowsay -f \`cowsay -l | tail -n +2 | tr  \" \"  \"\n\" | sort -R | head -n 1\`"
+alias sayfortune="fortune|randomsay"
 
 #############################################################
 ####################### Other Options #######################
@@ -107,3 +109,4 @@ compinit
 if [ -f ~/.zshrc_local ]; then
     source ~/.zshrc_local
 fi
+if [ -e /Users/samuelmartineau/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/samuelmartineau/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

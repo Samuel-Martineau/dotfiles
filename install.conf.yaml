@@ -9,6 +9,11 @@
 
 - clean: ["~"]
 
+- create:
+    ~/.ssh:
+      mode: 0700
+
+
 - link:
     ~/.zshrc: zshrc
     ~/.zsh_plugins/zsh-autosuggestions: zsh-autosuggestions
@@ -25,15 +30,11 @@
     ~/.gitconfig: gitconfig
     ~/.config/: config/*
 
-- create:
-    ~/.ssh:
-      mode: 0700
 
 - brewfile:
     - ./Brewfile
 
 - link:
-    /usr/local/share/zsh/site-functions/_docker-compose: /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion
     /usr/local/share/zsh/site-functions/_docker: /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion
 
 - shell:
