@@ -32,3 +32,6 @@
 [submodule "pure"]
 	path = pure
 	url = https://github.com/sindresorhus/pure.git
+[submodule "zsh-autoenv"]
+	path = zsh-autoenv
+	url = https://github.com/Tarrasch/zsh-autoenv

@@ -21,6 +21,7 @@ eval "$(navi widget zsh)"
 #############################################################
 eval $(brew shellenv)
 source "$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 
 
 #############################################################
@@ -30,6 +31,7 @@ fpath=(~/.zsh_plugins/zsh-completions/src $fpath)
 source ~/.zsh_plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh_plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh_plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+source ~/.zsh_plugins/zsh-autoenv/autoenv.zsh
 
 
 #############################################################
@@ -97,6 +99,7 @@ zstyle ':completion:*:(ssh|scp|ftp|sftp):*' hosts ${${${(@M)${(f)"$(cat ~/.ssh/c
 # https://unix.stackexchange.com/a/499322/419750
 zstyle ':completion:*:*:make:*' tag-order 'targets'
 
+# iTerm integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 autoload -Uz compinit
