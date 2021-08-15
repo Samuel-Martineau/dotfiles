@@ -1,6 +1,7 @@
 ahmadalli.vscode-nginx-conf
 alexcvzz.vscode-sqlite
 antfu.slidev
+astro-build.astro-vscode
 azemoh.one-monokai
 bbenoist.Nix
 bierner.markdown-mermaid
@@ -15,6 +16,7 @@ EditorConfig.EditorConfig
 eliostruyf.vscode-front-matter
 esbenp.prettier-vscode
 formulahendry.auto-rename-tag
+GitHub.copilot
 GitHub.remotehub
 GNVageesh.codel
 GrapeCity.gc-excelviewer
@@ -32,11 +34,15 @@ ms-toolsai.jupyter
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit
+ms-vscode.cpptools
+ms-vscode.live-server
 ms-vscode.vscode-typescript-next
 ms-vsliveshare.vsliveshare
 naumovs.color-highlight
+nhoizey.gremlins
 octref.vetur
 PKief.material-icon-theme
+pomdtr.excalidraw-editor
 raynigon.nginx-formatter
 redhat.vscode-commons
 redhat.vscode-xml

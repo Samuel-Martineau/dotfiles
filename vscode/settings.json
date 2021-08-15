@@ -5,27 +5,30 @@
   // Workbench
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editorAssociations": {
-    "*.jpeg": "luna.editor",
+    "*.jpeg": "imagePreview.previewEditor",
     "*.jpg": "imagePreview.previewEditor",
     "*.png": "imagePreview.previewEditor",
-    "*.ipynb": "jupyter.notebook.ipynb"
+    "*.ipynb": "jupyter-notebook"
   },
   "workbench.colorTheme": "Codel",
   // Editor
-  "editor.fontFamily": "'Fira Code'",
+  "editor.fontFamily": "'JetBrainsMono Nerd Font'",
   "editor.fontSize": 12,
   "editor.fontLigatures": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.inlineSuggest.enabled": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
   "editor.tabSize": 2,
+  // Security
+  "security.workspace.trust.untrustedFiles": "prompt",
   // Explorer
   "explorer.compactFolders": false,
   // Terminal
   "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono'",
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
   // Window
   "window.zoomLevel": 0.75,
   // Files
@@ -34,6 +37,11 @@
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true
+  },
+  // Notebook
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
   },
   // #############################################################
   // ######################## Extensions #########################
@@ -44,10 +52,21 @@
   "liveshare.presence": true,
   // Redhat
   "redhat.telemetry.enabled": false,
+  // Gremlins
+  "gremlins.showInProblemPane": true,
+  // Copilot
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "nix": false
+  },
   // #############################################################
   // ######################### Languages #########################
   // #############################################################
   // Python
+  "python.defaultInterpreterPath": "/Users/samuelmartineau/.asdf/shims/python",
   "python.analysis.typeCheckingMode": "basic",
   "python.languageServer": "Pylance",
   "python.formatting.provider": "black",
@@ -87,5 +106,13 @@
     "editor.wordWrap": "on",
     "editor.quickSuggestions": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Svelte
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  // Astro
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
   }
 }
