@@ -22,6 +22,13 @@ eval "$(navi widget zsh)"
 eval $(brew shellenv)
 source "$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/gnu-indent/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
+export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
+export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 
 
 #############################################################
@@ -101,6 +108,9 @@ zstyle ':completion:*:*:make:*' tag-order 'targets'
 
 # iTerm integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Deno
+export PATH="/Users/samuelmartineau/.deno/bin:$PATH"
 
 autoload -Uz compinit
 compinit
