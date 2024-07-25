@@ -1,0 +1,28 @@
+* DONE Setup LSP & FlyCheck
+* TODO Setup Org-Mode [0/8]
+- [ ] Snippets for blocks
+- [ ] Electric-pair-mode adjustments (e.g. LaTeX delimeters)
+- [ ] Learn basic shortcuts
+- [ ] LanguageTools & Vale
+- [ ] LaTeX template
+- [ ] Sample LaTeX document
+- [ ] LaTeX font-locking
+- [ ] Simplify C-c C-x C-l
+* TODO Fix ~policykit~ error
+#+begin_src shell
+  SHELL=/bin/sh pkexec "/nix/store/9516c16g9cd98b7mdy60v7zpvmcqvwgl-fortune-mod-3.20.0/bin/fortune"
+#+end_src
+* TODO Setup direnv
+* TODO Install Antidote10 (dictionary only)
+* TODO Default applications [0/6]
+- [ ] PDF
+- [ ] Image
+- [ ] Video
+- [ ] HTML
+- [ ] Link
+- [ ] Files
+* TODO Open file at point
+* TODO Treemacs
+* TODO Projectile
+* TODO Old configuration Sam
+* TODO Open external terminal at current folder
